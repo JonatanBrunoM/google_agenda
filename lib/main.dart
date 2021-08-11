@@ -15,6 +15,10 @@ void main() {
           color: grayDivider,
           thickness: 1,
         ),
+        iconTheme: IconThemeData(
+          color: blueTheme,
+          size: 30,
+        ),
         primarySwatch: blueTheme,
       ),
       debugShowCheckedModeBanner: false,
