@@ -48,10 +48,75 @@ class Details extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(
                 top: 20,
+                bottom: 20,
               ),
               child: Column(
                 children: [
                   IconsMenu(),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16,
+                bottom: 20,
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.phone_outlined,
+                    size: 30,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 10,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          _selectedContact.phone,
+                          style: TextStyle(
+                            color: grayTheme,
+                            fontSize: 10,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          "Celualr",
+                          style: TextStyle(
+                            color: grayTheme,
+                            fontSize: 10,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 139,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      right: 16,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.videocam_rounded,
+                          size: 30,
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        Icon(
+                          Icons.message_outlined,
+                          size: 30,
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),

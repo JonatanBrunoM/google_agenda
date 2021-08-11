@@ -9,7 +9,7 @@ class IconsMenu extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 10,
+              horizontal: 16,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

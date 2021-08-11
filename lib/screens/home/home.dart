@@ -23,9 +23,7 @@ class _HomeState extends State<Home> {
           itemBuilder: builder,
           itemCount: listOfContacts.length,
           separatorBuilder: (_, index) {
-            return Divider(
-              color: blueTheme,
-            );
+            return Divider();
           }),
     );
   }
